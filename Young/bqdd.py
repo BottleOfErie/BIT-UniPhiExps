@@ -13,7 +13,9 @@ for i in lst:
 if (len(lst) < 2):
     print("No enough elements")
 else:
-    out /= (len(lst)-1)*len(lst)
+    out /= len(lst)-1
+    print(f'实验标准误差:{numpy.sqrt(out)}')
+    out /= len(lst)
     alpha = numpy.sqrt(out)
     print(f'Alpha:{alpha}')
     beta = delta/k
