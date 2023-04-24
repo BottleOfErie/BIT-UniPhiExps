@@ -1,9 +1,10 @@
 import numpy
 
-k = 2
-delta = 2
-lst = [676.94, 675.05, 670.09, 667.53]
+k = numpy.sqrt(3)
+delta = 0.02
+lst = [33.04,33.02,33.06,33.1,33.04,33.04,33.02]
 ave = numpy.average(lst)
+print(f'Average:{ave}')
 out = 0
 alpha = 0
 beta = 0
@@ -12,7 +13,7 @@ for i in lst:
 if (len(lst) < 2):
     print("No enough elements")
 else:
-    out /= len(lst)-1
+    out /= (len(lst)-1)*len(lst)
     alpha = numpy.sqrt(out)
     print(f'Alpha:{alpha}')
     beta = delta/k
