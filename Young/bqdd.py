@@ -1,8 +1,8 @@
 import numpy
 
-k = numpy.sqrt(3)
-delta = 0.02
-lst = [33.04,33.02,33.06,33.1,33.04,33.04,33.02]
+k = 3
+delta = 0.0004
+lst = [8.25,8.103,7.887,7.752,6.815]
 ave = numpy.average(lst)
 print(f'Average:{ave}')
 out = 0
